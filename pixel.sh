@@ -1,7 +1,7 @@
 #!/bin/bash
 rm -rf prebuilts/clang/host/linux-x86
 rm -rf device/advan
-rm -rf vendor/advan
+rm -rf frameworks/base
 
 repo init --no-repo-verify --git-lfs -u https://github.com/PixelOS-AOSP/android_manifest.git -b sixteen-qpr2 -g default,-mips,-darwin,-notdefault
 /opt/crave/resync.sh || repo sync
@@ -15,10 +15,10 @@ git clone https://github.com/G100-X1/hardware_mediatek.git -b lineage-23.1 hardw
 git clone https://github.com/G100-X1/android_vendor_mediatek_ims.git -b lineage-23.1 vendor/mediatek/ims
 git clone https://github.com/G100-X1/android_vendor_sony_dolby.git -b sixteen-redesign vendor/sony/dolby
 
+git clone https://github.com/DooPrjkt/android_frameworks_base.git -b sixteen-qpr2 frameworks/base
+
 export BUILD_USERNAME=Rizj
 export BUILD_HOSTNAME=DooPrjkt
-
-repo sync
 
 source build/envsetup.sh
 breakfast X1 user
