@@ -17,9 +17,7 @@ export BUILD_USERNAME=Rizj
 export BUILD_HOSTNAME=DooPrjkt
 
 . build/envsetup.sh
-
 gk -s
-
 axion X1 gms pico user
 axionSync
 ax -b
