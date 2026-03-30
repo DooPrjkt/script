@@ -1,7 +1,7 @@
 #!/bin/bash
 rm -rf prebuilts/clang/host/linux-x86
 
-repo init --no-repo-verify --git-lfs -u https://github.com/AxionAOSP/android.git -b lineage-23.2 -b -g default,-mips,-darwin,-notdefault
+repo init --no-repo-verify --git-lfs -u https://github.com/AxionAOSP/android.git -b lineage-23.2 -g default,-mips,-darwin,-notdefault
 /opt/crave/resync.sh || repo sync
 
 git clone --depth=1 https://github.com/DooPrjkt/android_device_advan_X1.git -b axion device/advan/X1
