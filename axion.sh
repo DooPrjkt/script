@@ -16,8 +16,9 @@ git clone https://github.com/G100-X1/android_vendor_sony_dolby.git -b sixteen-re
 export BUILD_USERNAME=Rizj
 export BUILD_HOSTNAME=DooPrjkt
 
-. build/envsetup.sh
 gk -s
-axion X1 user gms pico
+
+. build/envsetup.sh
+axion X1 gms pico user
 axionSync
 ax -b
