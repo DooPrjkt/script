@@ -18,6 +18,6 @@ export BUILD_HOSTNAME=DooPrjkt
 
 . build/envsetup.sh
 gk -s
-axion X1 gms pico user
+axion X1 user gms pico
 axionSync
 ax -b
