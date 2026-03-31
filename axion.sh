@@ -14,8 +14,8 @@ git clone https://github.com/G100-X1/hardware_mediatek.git -b lineage-23.1 hardw
 git clone https://github.com/G100-X1/android_vendor_mediatek_ims.git -b lineage-23.1 vendor/mediatek/ims
 git clone https://github.com/G100-X1/android_vendor_sony_dolby.git -b sixteen-redesign vendor/sony/dolby
 
-export BUILD_USERNAME=Rizj
-export BUILD_HOSTNAME=DooPrjkt
+export BUILD_USERNAME=Doo
+export BUILD_HOSTNAME=crave
 
 gk -s
 
