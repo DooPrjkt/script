@@ -19,4 +19,4 @@ export BUILD_HOSTNAME=Crave
 
 . build/envsetup.sh
 lunch infinity_X1-user
-m bacon -j$(nproc --all)
+m bacon
