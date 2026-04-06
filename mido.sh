@@ -1,5 +1,8 @@
 #!/bin/bash
 rm -rf prebuilts/clang/host/linux-x86
+rm -rf device/xiaomi/mido
+rm -rf kernel/xiaomi/mido
+rm -rf vendor/xiaomi/mido
 
 repo init --no-repo-verify --git-lfs -u https://github.com/ProjectMatrixx/android -b 16.2 -g default,-mips,-darwin,-notdefault
 /opt/crave/resync.sh || repo sync
