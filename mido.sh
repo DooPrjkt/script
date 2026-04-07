@@ -3,6 +3,12 @@ rm -rf prebuilts/clang/host/linux-x86
 rm -rf device/xiaomi/mido
 rm -rf kernel/xiaomi/mido
 rm -rf vendor/xiaomi/mido
+rm -rf packages/modules/Connectivity
+rm -rf system/bpf
+rm -rf kernel/configs
+rm -rf hardware/qcom/wlan
+rm -rf hardware/qcom-caf/wlan
+rm -rf hardware/xiaomi
 rm -rf .repo/local_manifests
 
 repo init --no-repo-verify --git-lfs -u https://github.com/ProjectMatrixx/android -b 16.2 -g default,-mips,-darwin,-notdefault
