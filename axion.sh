@@ -20,6 +20,6 @@ export BUILD_HOSTNAME=crave
 gk -s
 
 . build/envsetup.sh
-axion X1 user gms pico
+axion X1 user gms
 axionSync
-ax -b
+ax -b user
