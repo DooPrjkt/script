@@ -1,5 +1,6 @@
 #!/bin/bash
 rm -rf prebuilts/clang/host/linux-x86
+rm -rf packages/apps/DolbyAtmos
 
 repo init --no-repo-verify --git-lfs -u https://github.com/Kitauji-High-School/pixelos_manifest.git -b sixteen-qpr2 -g default,-mips,-darwin,-notdefault
 /opt/crave/resync.sh || repo sync
@@ -12,7 +13,9 @@ git clone https://github.com/G100-X1/device_mediatek_sepolicy_vndr.git -b lineag
 git clone https://github.com/G100-X1/hardware_mediatek.git -b lineage-23.1 hardware/mediatek
 git clone https://github.com/G100-X1/android_vendor_mediatek_ims.git -b lineage-23.1 vendor/mediatek/ims
 
-export BUILD_USERNAME=bombo
+git clone https://github.com/putraaxzy/packages_apps_GameBar packages/apps/GameBar
+
+export BUILD_USERNAME=miku
 export BUILD_HOSTNAME=crave
 
 source build/envsetup.sh
