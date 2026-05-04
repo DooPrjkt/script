@@ -4,7 +4,7 @@ rm -rf prebuilts/clang/host/linux-x86
 repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault
 /opt/crave/resync.sh || repo sync
 
-git clone --depth=1 https://github.com/DooPrjkt/android_device_advan_X1.git -b infinity device/advan/X1
+git clone --depth=1 https://github.com/DooPrjkt/android_device_advan_X1.git -b infinity-wip device/advan/X1
 git clone --depth=1 https://github.com/G100-X1/android_vendor_advan_X1.git -b lineage-23.2 vendor/advan/X1
 git clone --depth=1 https://github.com/G100-X1/android_device_advan_X1-kernel.git -b lineage-23.1 device/advan/X1-kernel
 
