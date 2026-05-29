@@ -12,6 +12,7 @@ git clone --depth=1 https://github.com/G100-X1/android_device_advan_X1-kernel.gi
 git clone https://github.com/G100-X1/device_mediatek_sepolicy_vndr.git -b lineage-23.1 device/mediatek/sepolicy_vndr
 git clone https://github.com/G100-X1/hardware_mediatek.git -b lineage-23.1 hardware/mediatek
 git clone https://github.com/G100-X1/android_vendor_mediatek_ims.git -b lineage-23.1 vendor/mediatek/ims
+
 export BUILD_USERNAME=Doo
 export BUILD_HOSTNAME=crave
 
